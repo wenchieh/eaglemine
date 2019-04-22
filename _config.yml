@@ -7,6 +7,6 @@ exclude: [LICENCE, README.md, .gitignore]
 permalink: pretty
 theme: jekyll-theme-cayman
 markdown: redcarpet
-show_downloads:true
+show_downloads: true
 redcarpet:
   extensions: ["fenced_code_blocks", "autolink", "tables", "with_toc_data"]
