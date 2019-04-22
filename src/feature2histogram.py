@@ -65,8 +65,8 @@ def histogram_view(ins_hist, x_lab, y_lab, outs_viz=None):
     _shape_, ticks_vec, hist_arr = loader.load_multi_histogram(ins_hist)
     csr_mat = csr_matrix((hist_arr[:, -1], (hist_arr[:, 0], hist_arr[:, 1])), shape=_shape_, dtype=int)
     plot_heatmap(ticks_vec[1], ticks_vec[0], csr_mat.toarray(), xlabel=x_lab, ylabel=y_lab, outfn=outs_viz)
-    # plot_heatmap_graphlab_pgrk(ticks_vec[1], ticks_vec[0], csr_mat.toarray(), xlabel=xlabel, ylabel=ylabel, outfn=outfn)
-    # plot_heatmap_2discretes(ticks_vec[1], ticks_vec[0], csr_mat.toarray(), xlabel=xlabel, ylabel=ylabel, outfn=outfn)
+    # plot_heatmap_graphlab_pgrk(ticks_vec[1], ticks_vec[0], csr_mat.toarray(), xlabel=x_lab, ylabel=y_lab, outfn=outs_viz)
+    # plot_heatmap_2discretes(ticks_vec[1], ticks_vec[0], csr_mat.toarray(), xlabel=x_lab, ylabel=y_lab, outfn=outs_viz)
     print('done!')
 
 
