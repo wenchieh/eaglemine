@@ -1,6 +1,4 @@
 # General Jekyll Config
-name: Beyond outliers and on to micro-clusters: Vision-guided Anomaly Detection
-description: The introduction of the EagleMine algorithm for Heatmap Mining and Anomaly Detection
 url: wencheih.github.io/eaglemine
 
 exclude: [LICENCE, README.md, .gitignore]
