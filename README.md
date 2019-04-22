@@ -29,12 +29,12 @@ The download links for the datasets used in the paper are available [here](https
 
 ### Datasets statistic information
 
-|     Name     |          Content         |         Size        |  Edge  |    Graph   | Download |
-|:------------|:------------------------  |:-------------------  |:------:|:----------:|:----------:|
+|     Name     |          Content         |         Size        |  Edge  |    Graph   |  Download  |
+| ------------ | ------------------------ | ------------------- | ------ | ---------- | ---------- |
 | Amazon       | User X Item X Ratings    | 2.14M X 1.23 M X 5  | 5.84M  | bipartite  | [Link](http://konect.uni-koblenz.de/downloads/tsv/amazon-ratings.tar.bz2) |
 | Android      | User X Apps X Ratings    | 1.32M X 61.27K X 5  | 2.64M  | bipartite  | [Link](http://snap.stanford.edu/data/amazon/productGraph/categoryFiles/ratings_Apps_for_Android.csv) |
-| BeerAdvocate | User X Beer X Rating     | 33.37K X 65.91K X 4 | 1.57M  | bipartite  |      -      |
-| Tagged       | User X User X Relation   | 2.73M X 4.65M       | 858M (only a part) | unipartite | [Link](https://linqs-data.soe.ucsc.edu/public/social_spammer/)   |
+| BeerAdvocate | User X Beer X Rating     | 33.37K X 65.91K X 4 | 1.57M  | bipartite  |      -     |
+| Tagged       | User X User X Relation   | 2.73M X 4.65M       | 858M (only a part)  | unipartite | [Link](https://linqs-data.soe.ucsc.edu/public/social_spammer/)   |
 | Yelp         | User X Business X Rating | 686K X 85.5K X 5    | 2.68M  | bipartite  | [Link](https://www.yelp.com/dataset_challenge/dataset)   |
 | Youtube      | User X User              | 3.22M X 3.22M       | 9.37M  | unipartite | [Link](http://konect.uni-koblenz.de/downloads/tsv/youtube-u-growth.tar.bz2)   |
 ---
