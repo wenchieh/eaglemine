@@ -1,4 +1,15 @@
-Beyond outliers and on to micro-clusters: Vision-guided Anomaly Detection
+# EagleMine
+[![Build Status](https://travis-ci.org/wenchieh/eaglemine.svg?branch=master)](https://travis-ci.org/wenchieh/eaglemine) [![Python 2.7](https://img.shields.io/badge/python-2.7-blue.svg)](https://www.python.org/downloads/release/python-270/) ![GitHub](https://img.shields.io/github/license/wenchieh/eaglemine.svg) 
+
+Implementation of the _Beyond outliers and on to micro-clusters: Vision-guided Anomaly Detection__ by [Wenjie Feng et.al.(2019)](https://link.springer.com/chapter/10.1007%2F978-3-030-16148-4_42).
+
+```
+Feng, W., Liu, S., Faloutsos, C., Hooi, B., Shen, H. and Cheng, X.
+Beyond Outliers and on to Micro-clusters: Vision-Guided Anomaly Detection. 
+In Pacific-Asia Conference on Knowledge Discovery and Data Mining, 2019 (pp. 541-554). Springer, Cham.
+```
+
+About
 ========================
 **EagleMine** is a novel tree-based mining approach to recognize and summarize the micro-clusters in the heatmap.
 
