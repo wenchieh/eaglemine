@@ -1,7 +1,7 @@
 # EagleMine
 [![Build Status](https://travis-ci.org/wenchieh/eaglemine.svg?branch=master)](https://travis-ci.org/wenchieh/eaglemine) [![Python 2.7](https://img.shields.io/badge/python-2.7-blue.svg)](https://www.python.org/downloads/release/python-270/) ![GitHub](https://img.shields.io/github/license/wenchieh/eaglemine.svg) 
 
-Implementation of the _Beyond outliers and on to micro-clusters: Vision-guided Anomaly Detection__ by [Wenjie Feng et.al.(2019)](https://link.springer.com/chapter/10.1007%2F978-3-030-16148-4_42).
+Implementation of the _Beyond outliers and on to micro-clusters: Vision-guided Anomaly Detection__ by [Wenjie Feng et al.(2019)](https://link.springer.com/chapter/10.1007%2F978-3-030-16148-4_42).
 
 ```
 Feng, W., Liu, S., Faloutsos, C., Hooi, B., Shen, H. and Cheng, X.
@@ -11,7 +11,17 @@ In Pacific-Asia Conference on Knowledge Discovery and Data Mining, 2019 (pp. 541
 
 About
 ========================
-**EagleMine** is a novel tree-based mining approach to recognize and summarize the micro-clusters in the heatmap.
+**EagleMine** is a novel tree-based mining approach to recognize and summarize the micro-clusters in the heatmap. EagleMine:
+  - automatic summarization: automatically summarizes the heatmap derived from correlated graph features, 
+    and recognizes node groups forming disjointed dense areas as human vision does;
+  - effectiveness: detects interpretable groups, and outperforms the baselines, achieving better performance both in 
+    quantitative (i.e., code length for compact model description) and 
+    qualitative (i.e., consistent with vision-based judgment) comparisons;
+  - anomaly detection: spots, and even explains anomalies on real data by identifying suspicious micro-clusters, 
+    and achieves higher accuracy compared with the state-of-the-art methods;
+  - scalable: EagleMine is scalable, with nearly linear time complexity in the number of graph nodes, 
+    and can deal with more correlated features in multi-dimensional space.
+
 
 >   Inspired by the mechanism of human vision and cognitive system,
     **EagleMine** detects and summarizes micro-clusters (dense blocks) in the heatmap with a hierarchical
@@ -50,11 +60,12 @@ The download links for the datasets used in the paper are online available.
 | Youtube      | User X User              | 3.22M X 3.22M       | 9.37M  | unipartite | [Link](http://konect.uni-koblenz.de/downloads/tsv/youtube-u-growth.tar.bz2)   |
 ---
 
+
 Environment
 =======================
 Python 2.7 is the only supported in current version.
 
-To install required libraries, please type
+To install required dependencies, please type
 ```bash
 ./install_libs.sh
 ```
