@@ -1,8 +1,8 @@
 numpy
 scipy
-sklearn
 networkx
 matplotlib
 statsmodels
 pomegranate
+scikit-learn
 scikit-image
