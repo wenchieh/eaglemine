@@ -1,0 +1,10 @@
+language: python
+python:
+  - "2.7"
+# command to insyall dependencies
+install:
+  - pip install .
+  - pip install -r requirements
+  - pip install coveralls
+# command to run tests
+script: make demo
