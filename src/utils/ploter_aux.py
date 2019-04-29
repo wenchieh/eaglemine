@@ -15,7 +15,7 @@ __author__ = 'wenchieh'
 import numpy as np
 from numpy.linalg import eig
 import matplotlib
-matplotlib.use('Agg')
+matplotlib.use('Agg')   # no show
 import matplotlib.pylab as plt
 from matplotlib.patches import Ellipse
 from matplotlib.colors import LogNorm
