@@ -8,11 +8,13 @@
 
 __author__ = 'wenchieh'
 
+# sys
+import collections as clct
 
 # third-party lib
 import numpy as np
 import matplotlib
-matplotlib.use('Agg')
+matplotlib.use('TkAgg')
 import matplotlib.pylab as plt
 from matplotlib.colors import LogNorm
 
@@ -52,8 +54,8 @@ def plot_log2pdf(feature, xlabel, color_marker='b.', ylabel='Frequency', outfn=N
 def plot_clusters(data, center_pts, data_labels, outliers=list([]),
                   core_samples=None, grid=False, ticks=True, outfn=None):
     fig = plt.figure(figsize=(6.5, 6), dpi=96)
-    unique_labels = set(data_labels)
-    colors = plt.cm.Spectral(np.linspace(0, 1, len(unique_labels)))
+    lab2cnt = clct.Counter(data_labels)
+    colors = plt.cm.Spectral(np.linspace(0, 1, len(lab2cnt)))
     if core_samples is not None:
         core_samples_mask = np.zeros_like(data_labels, dtype=bool)
         core_samples_mask[core_samples] = True
@@ -61,7 +63,8 @@ def plot_clusters(data, center_pts, data_labels, outliers=list([]),
         core_samples_mask = np.ones_like(data_labels, dtype=bool)
 
     N_clusters = 0
-    for k, col in zip(unique_labels, colors):
+    srt_lab = np.asarray(lab2cnt.keys())[np.argsort(lab2cnt.values())][::-1]
+    for k, col in zip(srt_lab, colors):
         if k == -1:
             # Black used for noise.
             # col = 'gray'
@@ -72,6 +75,11 @@ def plot_clusters(data, center_pts, data_labels, outliers=list([]),
         xy = data[class_member_mask & core_samples_mask]
         if len(xy) > 0:
             plt.plot(xy[:, 1], xy[:, 0], 's', color=col, markersize=6) #markerfacecolor=col, markeredgecolor=col
+	
+	mn_xy = np.mean(xy, 0)
+        plt.text(mn_xy[1], mn_xy[0], str(k),
+                 {'color': 'k', 'fontsize': 18, 'ha': 'center', 'va': 'center',
+                  'bbox': dict(boxstyle="circle", fc="w", ec="k", pad=0.2, alpha=0.3)} )
         xy = data[class_member_mask & (~core_samples_mask)]
         if len(xy) > 0:
             plt.plot(xy[:, 1], xy[:, 0], 's', color=col, markersize=6) #markerfacecolor=col, markeredgecolor=col

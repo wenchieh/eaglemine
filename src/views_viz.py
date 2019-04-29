@@ -41,7 +41,7 @@ def cluster_view(ins_hcel2lab, outs=None, outlier_lab=-1):
     outliers_index = hcube_label[:, -1] == outlier_lab
     outliers = hcube_label[outliers_index, :-1]
     others_cls = hcube_label[~outliers_index]
-    labels = size_relabels(others_cls[:, -1])
+    labels = others_cls[:, -1]  #size_relabels(others_cls[:, -1])
     cls_fig = plot_clusters(others_cls[:, :-1], [], labels, outliers=outliers[::-1], ticks=False)
     if outs is not None:
         cls_fig.savefig(outs)
