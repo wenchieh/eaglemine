@@ -2,7 +2,7 @@
 # -*- coding=utf-8 -*-
 
 #  Project: eaglemine
-#  File: ealgemine_cluster_view.py
+#  File: views_viz.py
 #  Goal: provide visualization tools for viewing the clustering result
 #
 #      Version:  1.0

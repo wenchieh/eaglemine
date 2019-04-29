@@ -7,7 +7,7 @@
 #                 and Huawei Shen, and Xueqi Cheng
 #
 #  Project: eaglemine
-#      eaglemine_model.py
+#      run_graphfeature_histogram.py
 #      Version:  1.0
 #      Date: Dec. 17 2017
 #      Main Contact: Wenchieh Feng (wenchiehfeng.us@gmail.com)

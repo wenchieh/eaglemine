@@ -5,7 +5,7 @@
 #  Author: wenchieh
 #
 #  Project: eaglemine
-#      dtmnorm.py
+#      dtmnorm_describe.py
 #      Version:  1.0
 #      Date: December 1 2017
 #      Main Contact: Wenchieh Feng (wenchiehfeng.us@gmail.com)

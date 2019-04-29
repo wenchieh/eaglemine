@@ -2,24 +2,27 @@
 # -*- coding=utf-8 -*-
 
 ########################################################################################
+# Beyond outliers and on to micro-clusters: Vision-guided Anomaly Detection
+# Authors: Wenjie Feng, Shenghua Liu, Christos Faloutsos, Bryan Hooi,
+#                 and Huawei Shen, and Xueqi Cheng
+#
+#  Project: eaglemine
+#      run_graph_feature.py
+#      Version:  1.0
+#      Date: Dec. 17 2017
+#      Main Contact: Wenchieh Feng (wenchiehfeng.us@gmail.com)
+#
+#      Copyright:
+#        This software is free of charge under research purposes.
+#        For commercial purposes, please contact the author.
+#
+#      Created by @wenchieh  on <12/17/2017>
+#
+#      Main contributor:  Wenjie Feng
+#
+# -------------------------------------------------------------------------------
 #  Tool for extracting graph node's features.
 #    like out-/in-degree, hubness/authoritativeness, pagerank, #triangles etc.
-#
-#   Here we only provide an example for
-#        out-/in-degree vs. hubness/authority features for bipartite graph, and
-#   .    degree vs. pagerank features for unipartite graph
-#   The user can refer to BipartiteGraph and UnipartiteGraph for other possible features.
-#   Besides, other user-defined feature also can be used for EagleMine algorithm.
-#
-#   Inputs:
-#       infn_edgelist: the 1st input argument
-#             The input filename of the graph with edgelist format: u,v
-#       startzero: the 2nd input parameter (True/ False)
-#             Indicating if the node index (us and vs) starting 0.
-#       gtype: the 3rd input parameter
-#             graph type ['bip', 'unip']
-#       outpath: the 4th input parameter
-#             The output path of results.
 #
 # Example:
 #   python run_graph_feature.py example/example.graph True bip example

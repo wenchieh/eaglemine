@@ -1,8 +1,8 @@
 #!/usr/bin/python2.7
 # -*- coding=utf-8 -*-
 
-######################################################
-#  leveltree_test
+##################################################################
+#  WaterLevelTree Test
 #  Goal: Test script for WaterLevelTree algorithm
 #  Author: wenchieh
 #
@@ -18,6 +18,7 @@
 #
 #      Created by @wenchieh  on <11/30/2017>
 #
+##################################################################
 
 __author__ = 'wenchieh'
 

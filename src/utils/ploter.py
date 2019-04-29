@@ -2,7 +2,8 @@
 # -*- coding=utf-8 -*-
 
 #  Project: eaglemine
-#      loader.py
+#      ploter.py
+#		  visualization tools
 #      Created by @wenchieh  on <11/25/2017>
 
 
@@ -14,7 +15,7 @@ import collections as clct
 # third-party lib
 import numpy as np
 import matplotlib
-matplotlib.use('TkAgg')
+matplotlib.use('Agg')
 import matplotlib.pylab as plt
 from matplotlib.colors import LogNorm
 
