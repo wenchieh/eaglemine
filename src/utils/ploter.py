@@ -14,7 +14,7 @@ import collections as clct
 # third-party lib
 import numpy as np
 import matplotlib
-matplotlib.use('TkAgg')
+matplotlib.use('Agg')  # no show
 import matplotlib.pylab as plt
 from matplotlib.colors import LogNorm
 
