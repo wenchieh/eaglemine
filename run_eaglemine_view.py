@@ -46,7 +46,7 @@ viz_desc = 'viz_describe.png'
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Cluster view of the EagleMine result for 'two' dimensional histogram, "
                                                  "the output includes the viz_cluster.png and viz_describes.png",
-                                     usage="python views_viz.py [in_hist] [in_desc] [in_hpslab] [x] [y] [outs]")
+                                     usage="python run_eaglemine_view.py in_hist in_desc in_hcel2lab desc_voc x_lab y_lab outs")
     parser.add_argument("in_hist", type=str, help="input path of histogram")
     parser.add_argument("in_desc", type=str, help="input path of describe result from ealgemine model")
     parser.add_argument("in_hcel2lab", type=str, help="input path of label of each cell in histogram from eaglemine model")
