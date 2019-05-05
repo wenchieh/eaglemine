@@ -40,8 +40,8 @@ warnings.filterwarnings("ignore")
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="'EagleMine' algorithm",
-                                     usage="python run_eaglemine.py in_hist in_node2hcel in_hcel2avgfeat "
-                                           "desc_voc degidx mode mix_comps outs")
+                                     usage="python run_eaglemine.py in_hist in_node2hcel in_hcel2avgfeat strict "
+                                           "desc_voc wt_featidx mode mix_comps outs")
     parser.add_argument("in_hist", type=str, help="input path of histogram. "
                                               "The record in histogram should be in the format 'x,y,z,...,val', "
                                               "denoting that the cell (x, y, z, ...) affiliates with value 'val'")
