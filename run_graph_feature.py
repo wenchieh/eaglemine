@@ -43,7 +43,7 @@ deg2pgrk = 'deg2pgrk'
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Compute graph node features",
-                                     usage="python run_graph_feature.py [in_edgelist] [startszero] [gtype] [outs]")
+                                     usage="python run_graph_feature.py in_edgelist startszero gtype outs")
     parser.add_argument("in_edgelist", type=str, help="input path of graph edgelist")
     parser.add_argument("startzero", type=bool, help="is the node index start ZERO")
     parser.add_argument("gtype", choices={"bip", "unip"}, help="graph type: 'unip': unipartite, 'bip': bipartite")
