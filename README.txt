@@ -8,7 +8,7 @@ Version: 1.0
 Python: 2.7
 Date: July 9, 2017
 Main Contact: Wenjie Feng  
-            ( fengwenjie@software.ict.ac.cn / wenchiehfen.us@gmail.com )
+            ( fengwenjie@ict.ac.cn / wenchiehfeng.us@gmail.com )
 
 This software is free of charge under research purposes.
 For commercial purposes, please contact the author.
