@@ -44,7 +44,7 @@ from src.waterleveltree import waterleveltree
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="'WaterLevelTree' algorithm",
-                                     usage="python run_waterleveltree.py [ins] [outs]")
+                                     usage="python run_waterleveltree.py ins outs")
     parser.add_argument("ins", type=str, help="input path of histogram. "
                                               "The record in histogram should be in the format 'x,y,z,...,val', "
                                               "denoting that the cell (x, y, z, ...) affiliates with value 'val'")
