@@ -50,8 +50,8 @@ heatmap = 'heatmap.png'
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Construct histogram for correlated features (TWO-dimension)",
-                                     usage="python run_graphfeature_histogram.py [ins], [degidx] "
-                                           "[x_lab] [y_lab] [delimiter] [comments] [outs]")
+                                     usage="python run_graphfeature_histogram.py ins degidx "
+                                           "x_lab y_lab outs delimiter comments")
     parser.add_argument("ins", type=str, help="input path of correlated features of graph nodes."
                                               "Each line of file corresponding to two feature of one node")
     parser.add_argument("degidx", type=int, default=0, help="feature index if contain (in/out-) degree for graph else 0")
