@@ -63,7 +63,7 @@ The download links for the datasets used in the paper are online available.
 
 Environment
 =======================
-Python 2.7 is the only supported in current version.
+Python 2.7 is the only supported in current version. (⚠)
 
 To install required dependencies, please type
 ```bash
@@ -80,7 +80,7 @@ Please see [User Guide](user_guide.pdf)
 Running Demo
 ========================
 
-#### Graph Analysis
+### Graph Analysis
 
 Demo for scratch graph features, please type
 ```bash
@@ -109,7 +109,7 @@ For the very large graph, user can use powerful graph analysis tools to extract 
 like [graphlab](https://turi.com/), and ```src/tools/large_graph.py``` gives a simple example.
 
 
-#### Heatmap demo
+### Heatmap demo
 Heatmap analysis demo, please type
 ```bash
 ./demo
@@ -119,8 +119,8 @@ Heatmap analysis demo, please type
 
 ---
 
-### **NOTE**
-The interfaces in ```run_*.py``` contains detail information and parameter explanation.
+## **NOTE** 
+👉 The interfaces in ```run_*.py``` contains detail information and parameter explanation.
  * ```run_eaglemine.py```:  
     EagleMine algorithm consists of WaterLevelTree, TreeExplore, and suspicious measure.
  * ```run_eaglemine_view.py```:  
